@@ -1,0 +1,89 @@
+*{
+    font-family: Roboto;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    gap: 10vh;
+}
+
+header{
+    text-align: center;
+    font-weight: bold;   
+    font-family: Roboto; 
+    padding-top: 10px;
+}
+
+.container-main-block{
+    height: 350px;
+    width: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-block{
+    background-color: #ff0000;
+    height: 220px;
+    width: 220px;
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 15px;
+}
+
+.form-container{
+    display: flex;
+
+}
+
+.tamanho, .raio, .distancia, .intensidade, .borrao{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+#size, #radius, #distance, #intansity, #blur{
+    width: 100%;
+}
+
+.corpo{
+    margin-bottom: 15px;
+}
+
+form{
+    width: 90%;
+    margin-right: 2px;
+}
+
+.form-values{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+#size-value, #radius-value, #distance-value, #intansity-value, #blur-value{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#textbox{
+    width: 400px;
+    border: 1px solid black;
+    padding: 6px;
+    padding: 10px 0;
+
+    padding-left: 10px;
+
+    white-space: pre-line;
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Border</h1>
+        <h2>Generate CSS Code</h2>
+    </header>
+    <main>
+        <div class="container-main-block">
+            <div id="main-block">
+            </div>
+        </div>
+        <div class="options">
+            <div class="background">
+                <div class="auto-choose">
+                    <label for="auto-color">Pick a color: </label>
+                    <input type="color" name="color" id="auto-color" value="#ff0000">
+                </div>
+                <div class="hex">
+                    <label for="hex-code">or</label>
+                    <input type="text" id="hex-code" name="hex-code" pattern="[0-9A-Fa-f]+" value="#ff0000" placeholder="#ffffff">
+                </div>
+            </div>
+            <div class="form-container">
+                <form>
+                    <div class="tamanho">
+                        <label for="size">Size:</label>
+                        <input type="range" name="size" id="size" min="10" max="350" value="50">
+                    </div>
+                    <div class="raio">
+                        <label for="radius">Radius:</label>
+                        <input type="range" name="radius" id="radius" min="0" max="175">
+                    </div>
+                    <div class="distancia">
+                        <label for="distance">Distance:</label>
+                        <input type="range" name="distance" id="distance" min="5" max="50">
+                    </div>
+                    <div class="intensidade">
+                        <label for="intansity">Intansity:</label>
+                        <input type="range" name="intansity" id="intansity" min="0.10" max="0.60" step="0.01">
+                    </div>
+                    <div class="borrao">
+                        <label for="blur">Blur:</label>
+                        <input type="range" name="blur" id="blur" min="0" max="100">
+                    </div>
+                    <div class="corpo">
+                        <label>Shape:</label><br>
+                        <button title="Flat">A</button>
+                        <button title="Concave">B</button>
+                        <button title="Convex">C</button>
+                        <button title="Pressed">D</button>
+                    </div>
+                </form>
+                <div class="form-values">
+                    <span id="size-value">80</span>
+                    <span id="radius-value">0</span>
+                    <span id="distance-value">0</span>
+                    <span id="intansity-value">0</span>
+                    <span id="blur-value">0</span>
+                </div>
+            </div>
+            <p id="textbox">border-radius: 0px;
+                background-color: #ff0000;
+                box-shadow:  0px 0px 0px
+            </p><br>
+            <button onclick="copiarTexto()">Copiar Conteúdo</button>
+        </div>
+    </main>
+</body>
+</html>
